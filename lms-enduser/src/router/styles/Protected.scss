@@ -1,0 +1,45 @@
+@use "../../../sass/abstract/" as *;
+
+.main-layout {
+    // border: 1px solid blue;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    .inside-layout {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        gap: 7px;
+        .sidebar-layout {
+            width: 15%;
+            border: 1px solid red;
+        }
+        .sidebar-layout-inside {
+            width: 5%;
+            border: 2px solid orangered;
+        }
+        .main-layout-body {
+            width: 85%;
+            border: 2px solid orangered;
+        }
+        .main-layout-body-inside {
+            width: 95%;
+            border: 2px solid orangered;
+        }
+        .sidebar-main-section {
+            // border: 1px solid blue;
+            height: 100%;
+            box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+            border-top-right-radius: 15px;
+            border-bottom-right-radius: 15px;
+            .side-texts-contents {
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+                gap: 30px;
+                padding-left: 10px;
+                padding-top: 20%;
+            }
+        }
+    }
+}
